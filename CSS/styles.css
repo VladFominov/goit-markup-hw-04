@@ -314,6 +314,8 @@ ul {
 }
 
 .team-list {
+    background-color: #ffffff;
+
     display: flex;
     text-align: center;
 }
@@ -344,7 +346,7 @@ ul {
     font-size: 16px;
     line-height: 1.2;
     letter-spacing: 0.03em;
-    margin-bottom: 30px;
+    margin-bottom: 16px;
 }
 
 /* посілання на соц сеті */
@@ -376,6 +378,9 @@ ul {
     color: #FFFFFF;
 }
 /* посілання на соц сеті */
+
+/* Секція Постійні клієнти */
+
 .svg-clients {
     fill: #AFB1B8;
 }
@@ -385,29 +390,35 @@ ul {
     fill: #2196F3;
 }
 
-/* Секція Постійні клієнти */
+.client-link:hover,
+.client-link:focus {
+    border-color: #2196F3;
+}
+
 .clients {
     padding-top: 94px;
-    padding-bottom: 127px;
+    padding-bottom: 94px;
 }
 
 .client-list {
     list-style-type: none;
     display: flex;
     justify-content: space-between;
-    gap: 30px;
-    
-    
+    gap: 30px;    
 }
 
 .client-items {
-  width: 170px;
-  height: 92px;  
-  display: flex;
-  justify-content: center;
-  align-items: center;
   
-    
+}
+
+.client-link {
+    width: 170px;
+    height: 92px;  
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border: 1px solid#AFB1B8;
+    cursor: pointer;
 }
 
 /* Підвал сайту */
@@ -587,7 +598,7 @@ ul {
 
 .shadow-portfolio:hover,
 .shadow-portfolio:focus {
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .logo-disc {
