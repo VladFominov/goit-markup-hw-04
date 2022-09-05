@@ -137,8 +137,14 @@ body {
 
 .icon-envelope {
     display: flex;
-
 }
+
+.icon-color {
+    fill: currentColor;
+       
+}
+
+
 /* псевдоелемент для іконки envelope */
 
 
@@ -225,6 +231,7 @@ ul {
 /* стилювання іконок */
 .bg-icons {
     background-color: #F5F4FA;
+    border-radius: 4px;
     display: flex;
     justify-content: center;
     width: 270px;
@@ -302,6 +309,7 @@ ul {
 
 /* Четверта секція - наша команда */
 .shadow {
+    background-color: #ffffff;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -314,8 +322,6 @@ ul {
 }
 
 .team-list {
-    background-color: #ffffff;
-
     display: flex;
     text-align: center;
 }
@@ -382,18 +388,25 @@ ul {
 /* Секція Постійні клієнти */
 
 .svg-clients {
-    fill: #AFB1B8;
-}
-
-.svg-clients:hover,
-.svg-clients:focus {
-    fill: #2196F3;
+    fill: currentColor;
 }
 
 .client-link:hover,
 .client-link:focus {
+    color: #2196F3;
     border-color: #2196F3;
 }
+
+
+/* .svg-clients:hover,
+.svg-clients:focus {
+    fill: #2196F3;
+} */
+
+/* .client-link:hover,
+.client-link:focus {
+    border-color: #2196F3;
+} */
 
 .clients {
     padding-top: 94px;
@@ -413,7 +426,9 @@ ul {
 
 .client-link {
     width: 170px;
-    height: 92px;  
+    height: 92px;
+    color: #AFB1B8;
+    border-radius: 4px;  
     display: flex;
     justify-content: center;
     align-items: center; 
